@@ -1,0 +1,1440 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Jul 26 2022 08:47:37 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="62de798201805b4865910a96" data-wf-site="62de798201805b802e910a92">
+<head>
+  <meta charset="utf-8">
+  <title>Edison&#x27;s Awesome Site</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/edisons-awesome-site-86a433.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
+  <meta name="facebook-domain-verification" content="mlk59ybu44651lzcbhhxjfl8vfae8q">
+  <style>
+  html { font-size: calc(1.0460484384958573rem + 0.12746972594008923vw); }
+  @media screen and (max-width:2560px) { html { font-size: calc(1.0460484384958573rem + 0.1274697259400892vw); } }
+  @media screen and (max-width:991px) { html { font-size: calc(0.8484933035714286rem + 0.4464285714285714vw); } }
+  @media screen and (max-width:767px) { html { font-size: calc(0.8966262975778546rem + 0.34602076124567477vw); } }
+  @media screen and (max-width:478px) { html { font-size: calc(0.875rem + 0.41841004184100417vw); } }
+</style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+/* Snippet makes all link elements listed below to inherit color from their parent */
+a,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link
+{
+color: inherit;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+  pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+    main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+/*Reset selects, buttons, and links styles*/
+.w-input, .w-select, a {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." at 100% width */
+.truncate-width {
+		width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+</style>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="cecbe119-dda2-0e4d-52e7-2e8f117a6968" data-easing="ease" data-easing2="ease" role="banner" class="navbar_component w-nav">
+      <div class="navbar_container">
+        <a href="#" class="navbar_logo-link w-nav-brand"><img src="images/EdisonNfts.png" loading="lazy" width="134" alt=""></a>
+        <nav role="navigation" class="navbar_menu w-nav-menu">
+          <a href="#about" class="navbar_link w-nav-link">About</a>
+          <a href="#collection" class="navbar_link w-nav-link">Collection</a>
+          <a href="#faq" class="navbar_link w-nav-link">FAQs</a>
+          <a href="#" id="connect" class="navbar_button blue w-button">Connect wallet</a>
+          <div class="w-layout-grid navbar_social-wrapper">
+            <a href="https://twitter.com/larvalabs" target="_blank" class="navbar_social-link w-inline-block">
+              <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="CurrentColor"></path>
+                </svg></div>
+            </a>
+            <a href="#" class="navbar_social-link w-inline-block">
+              <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_16_462)">
+                    <path d="M19.2774 5.01386C17.9389 4.37206 16.5036 3.89921 15.0029 3.62839C14.9756 3.62317 14.9483 3.63623 14.9342 3.66235C14.7496 4.00545 14.5451 4.45304 14.402 4.80485C12.7879 4.55232 11.182 4.55232 9.60103 4.80485C9.45782 4.44522 9.24592 4.00545 9.0605 3.66235C9.04642 3.6371 9.01912 3.62404 8.99179 3.62839C7.49192 3.89835 6.05662 4.3712 4.71732 5.01386C4.70572 5.01908 4.69579 5.0278 4.68919 5.03911C1.96672 9.28954 1.22092 13.4355 1.58678 17.5301C1.58844 17.5501 1.5992 17.5693 1.6141 17.5814C3.41031 18.9599 5.15024 19.7968 6.85787 20.3515C6.8852 20.3602 6.91415 20.3497 6.93155 20.3262C7.33549 19.7498 7.69556 19.1419 8.00429 18.5027C8.02251 18.4653 8.00512 18.4209 7.96788 18.4061C7.39674 18.1797 6.8529 17.9036 6.32976 17.5902C6.28838 17.5649 6.28507 17.503 6.32314 17.4734C6.43323 17.3872 6.54334 17.2975 6.64846 17.207C6.66748 17.1904 6.69398 17.1869 6.71634 17.1974C10.1531 18.8371 13.8739 18.8371 17.2701 17.1974C17.2924 17.1861 17.3189 17.1896 17.3388 17.2061C17.4439 17.2967 17.554 17.3872 17.6649 17.4734C17.703 17.503 17.7005 17.5649 17.6591 17.5902C17.136 17.9097 16.5922 18.1797 16.0202 18.4052C15.983 18.42 15.9664 18.4653 15.9846 18.5027C16.3 19.141 16.66 19.7489 17.0565 20.3254C17.0731 20.3497 17.1029 20.3602 17.1302 20.3515C18.8461 19.7968 20.586 18.9599 22.3823 17.5814C22.398 17.5693 22.4079 17.551 22.4096 17.5309C22.8474 12.7972 21.6762 8.68521 19.3047 5.03998C19.2989 5.0278 19.289 5.01908 19.2774 5.01386ZM8.51752 15.0369C7.48281 15.0369 6.63024 14.0442 6.63024 12.825C6.63024 11.6059 7.46628 10.6132 8.51752 10.6132C9.57701 10.6132 10.4213 11.6146 10.4048 12.825C10.4048 14.0442 9.56873 15.0369 8.51752 15.0369ZM15.4954 15.0369C14.4607 15.0369 13.6082 14.0442 13.6082 12.825C13.6082 11.6059 14.4442 10.6132 15.4954 10.6132C16.5549 10.6132 17.3992 11.6146 17.3827 12.825C17.3827 14.0442 16.5549 15.0369 15.4954 15.0369Z" fill="CurrentColor"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_16_462">
+                      <rect width="21" height="17" fill="white" transform="translate(1.5 3.5)"></rect>
+                    </clippath>
+                  </defs>
+                </svg></div>
+            </a>
+          </div>
+        </nav>
+        <div class="navbar_menu-button w-nav-button">
+          <div class="menu-icon1">
+            <div class="menu-icon1_line-top"></div>
+            <div class="menu-icon1_line-middle">
+              <div class="menu-icon_line-middle-inner"></div>
+            </div>
+            <div class="menu-icon1_line-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <header class="section-home-header">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="home-header_component">
+                <div class="text-align-center">
+                  <div class="max-width-large">
+                    <div class="margin-bottom margin-small">
+                      <h1>The project that inspired the modern EdisonArt movement</h1>
+                    </div>
+                    <div class="margin-bottom margin-medium">
+                      <div class="max-width-small align-center">
+                        <p class="text-size-medium text-color-grey">10,000 unique collectible characters with proof of ownership stored on the Ethereum blockchain.</p>
+                      </div>
+                    </div>
+                    <div class="button-wrapper button-wrapper-center">
+                      <a id="mint-button" href="#" class="button w-button">Mint now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div data-w-id="fbb2cfb0-0e22-75f4-4978-59c3b7e98b54" class="punks-slider_component">
+        <div class="punks-slider_content">
+          <div class="punks-slider_list">
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b5d-65910a96" class="punks-slider_image-wrapper"><img src="images/punk1.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b5f-65910a96" class="punks-slider_image-wrapper"><img src="images/punk2.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b61-65910a96" class="punks-slider_image-wrapper"><img src="images/punk3.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b63-65910a96" class="punks-slider_image-wrapper"><img src="images/Punk4.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b65-65910a96" class="punks-slider_image-wrapper"><img src="images/punk5.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b67-65910a96" class="punks-slider_image-wrapper"><img src="images/punk6.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b69-65910a96" class="punks-slider_image-wrapper"><img src="images/punk7.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fbb2cfb0-0e22-75f4-4978-59c3b7e98b6b-65910a96" class="punks-slider_image-wrapper"><img src="images/punk8.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-_9ed2eecb-e9e1-89bc-80e5-5f12dedc8770-65910a96" class="punks-slider_image-wrapper"><img src="images/punk9.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-eec378bd-d7c1-f0c8-11b1-631daca5078e-65910a96" class="punks-slider_image-wrapper"><img src="images/punk10.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-fb36ae1f-5de5-1418-eeb9-4f9cfadbd542-65910a96" class="punks-slider_image-wrapper"><img src="images/punk11.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-_7c26bdce-d3fb-a95c-fc14-2af5261498c4-65910a96" class="punks-slider_image-wrapper"><img src="images/punk12.png" loading="lazy" alt="" class="punks-slider_image"></div>
+          </div>
+          <div class="punks-slider_list">
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ad6-65910a96" class="punks-slider_image-wrapper"><img src="images/punk1.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ad8-65910a96" class="punks-slider_image-wrapper"><img src="images/punk2.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ada-65910a96" class="punks-slider_image-wrapper"><img src="images/punk3.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055adc-65910a96" class="punks-slider_image-wrapper"><img src="images/Punk4.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ade-65910a96" class="punks-slider_image-wrapper"><img src="images/punk5.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ae0-65910a96" class="punks-slider_image-wrapper"><img src="images/punk6.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ae2-65910a96" class="punks-slider_image-wrapper"><img src="images/punk7.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ae4-65910a96" class="punks-slider_image-wrapper"><img src="images/punk8.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ae6-65910a96" class="punks-slider_image-wrapper"><img src="images/punk9.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055ae8-65910a96" class="punks-slider_image-wrapper"><img src="images/punk10.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055aea-65910a96" class="punks-slider_image-wrapper"><img src="images/punk11.png" loading="lazy" alt="" class="punks-slider_image"></div>
+            <div id="w-node-f5d40f60-120f-910e-e57c-39d5cd055aec-65910a96" class="punks-slider_image-wrapper"><img src="images/punk12.png" loading="lazy" alt="" class="punks-slider_image"></div>
+          </div>
+        </div>
+      </div>
+      <header id="blog-header-20" class="section-home-press">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="margin-bottom margin-xlarge">
+                    <div class="heading-small">Featured in</div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-press_list-wrapper">
+                <div class="w-layout-grid home-press_list">
+                  <div class="home-press_item">
+                    <a data-w-id="8a1370e8-83a9-14f2-c409-4b0d8de5c7cd" href="https://mashable.com/article/cryptopunks-ethereum-art-collectibles" target="_blank" class="home-press_item-link w-inline-block">
+                      <div class="home-press_item-content-top">
+                        <div class="margin-bottom margin-small"><img sizes="(max-width: 479px) 52vw, 125.203125px" loading="lazy" srcset="images/mashable-p-500.png 500w, images/mashable.png 601w" src="images/mashable.png" alt="" class="home-press_logo"></div>
+                        <div class="text-size-large">This ethereum-based project could change how we think about digital art</div>
+                      </div>
+                      <div class="home-press_item-content-bottom">
+                        <div class="button-tertiary">
+                          <div>Read article</div><img src="images/crypto-arrow-icon.svg" loading="lazy" alt="" class="home-press_item-link-icon">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="home-press_item">
+                    <a data-w-id="a6d55829-4ecb-ab5a-ed02-3dec6bdcb875" href="https://www.ft.com/content/f9c1422a-47c9-11e8-8c77-ff51caedcde6" target="_blank" class="home-press_item-link w-inline-block">
+                      <div class="home-press_item-content-top">
+                        <div class="margin-bottom margin-small"><img src="images/Financial-Times.png" loading="lazy" alt="" class="home-press_logo"></div>
+                        <div class="text-size-large">CryptoKitties, CryptoPunks and the birth of a cottage industry<br></div>
+                      </div>
+                      <div class="home-press_item-content-bottom">
+                        <div class="button-tertiary">
+                          <div>Read article</div><img src="images/crypto-arrow-icon.svg" loading="lazy" alt="" class="home-press_item-link-icon">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="home-press_item">
+                    <a data-w-id="9a2664f8-beb7-50de-e4ec-9c6bd513d47a" href="https://www.marketwatch.com/story/obviously-we-had-no-idea-it-was-going-to-get-here-say-the-guys-who-made-the-first-nft-11615324003" target="_blank" class="home-press_item-link w-inline-block">
+                      <div class="home-press_item-content-top">
+                        <div class="margin-bottom margin-small"><img sizes="(max-width: 479px) 69vw, 166.75px" loading="lazy" srcset="images/marketwatch-p-500.png 500w, images/marketwatch.png 667w" src="images/marketwatch.png" alt="" class="home-press_logo marketwatch"></div>
+                        <div class="text-size-large">‘Obviously, we had no idea it was going to get here,’ say the guys who made the first NFT<br></div>
+                      </div>
+                      <div class="home-press_item-content-bottom">
+                        <div class="button-tertiary">
+                          <div>Read article</div><img src="images/crypto-arrow-icon.svg" loading="lazy" alt="" class="home-press_item-link-icon">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="about" class="section-home-punks">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="margin-bottom margin-xhuge">
+                <div class="w-layout-grid home-punks_content-wrapper">
+                  <div class="home-punks_heading-wrapper">
+                    <h2>Meet the Punks</h2>
+                  </div>
+                  <div class="home-punks_content-right">
+                    <div class="margin-bottom margin-small">
+                      <p class="text-size-medium text-color-grey">The CryptoPunks are 24x24 pixel art images, generated algorithmically. Most are punky-looking guys and girls, but there are a few rarer types mixed in: Apes, Zombies and even the odd Alien. Every punk has their own profile page that shows their attributes as well as their ownership/for-sale status.</p>
+                    </div>
+                    <div class="button-row">
+                      <div class="button-wrapper">
+                        <a href="https://opensea.io/collection/cryptopunks" target="_blank" class="button w-button">Buy a Punk</a>
+                      </div>
+                      <div class="button-wrapper">
+                        <a href="#collection" class="button-secondary w-button">View full collection</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-duration-in="400" data-duration-out="200" data-current="Tab 1" data-easing="ease" class="home-punks_component w-tabs">
+                <div id="w-node-_55ea86a4-fe8d-90ae-2330-938fba89e0a0-65910a96" class="home-punks_tabs-menu w-tab-menu">
+                  <a data-w-tab="Tab 1" class="home-punks_tabs-link blue w-inline-block w-tab-link w--current">
+                    <h5 class="home-punks_heading-medium">Punks with a blue background are not for sale and have no current bids.</h5>
+                  </a>
+                  <a data-w-tab="Tab 2" class="home-punks_tabs-link red w-inline-block w-tab-link">
+                    <h5 class="home-punks_heading-medium">Punks with a red background are available for sale by their owner.</h5>
+                  </a>
+                  <a data-w-tab="Tab 3" class="home-punks_tabs-link purple w-inline-block w-tab-link">
+                    <h5 class="home-punks_heading-medium">Punks with a purple background have an active bid on them</h5>
+                  </a>
+                </div>
+                <div class="w-tab-content">
+                  <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+                    <div class="home-punks__image-wrapper"><img srcset="images/punk10_large-p-500.png 500w, images/punk10_large-p-800.png 800w, images/punk10_large-p-1080.png 1080w, images/punk10_large-p-1600.png 1600w, images/punk10_large.png 2240w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 42vw" src="images/punk10_large.png" loading="lazy" alt="" class="home-punks_image"></div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="w-tab-pane">
+                    <div class="home-punks__image-wrapper"><img srcset="images/Punk4_large-p-500.png 500w, images/Punk4_large-p-800.png 800w, images/Punk4_large-p-1080.png 1080w, images/Punk4_large-p-1600.png 1600w, images/Punk4_large.png 2240w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 42vw" src="images/Punk4_large.png" loading="eager" alt="" class="home-punks_image"></div>
+                  </div>
+                  <div data-w-tab="Tab 3" class="w-tab-pane">
+                    <div class="home-punks__image-wrapper"><img srcset="images/punk9_large-p-500.png 500w, images/punk9_large-p-800.png 800w, images/punk9_large-p-1080.png 1080w, images/punk9_large-p-1600.png 1600w, images/punk9_large.png 2240w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 42vw" src="images/punk9_large.png" loading="eager" alt="" class="home-punks_image"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="collection" class="section-home-sales">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-top padding-xhuge">
+              <div class="margin-bottom margin-xxlarge">
+                <div class="home-sales_content-top">
+                  <h2 class="text-color-black">Largest Sales</h2>
+                  <a href="https://opensea.io/collection/cryptopunks" target="_blank" class="button-secondary invert-colors w-button">View all</a>
+                </div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="home-sales_component w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+                <div class="home-sales_mask w-slider-mask">
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk3100-p-500.png 500w, images/punk3100.png 1167w" src="images/punk3100.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#3100</div>
+                        <div class="text-size-medium">4.2KΞ ($7.58M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Mar 11, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk7804-p-500.png 500w, images/punk7804.png 1167w" src="images/punk7804.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#7408</div>
+                        <div class="text-size-medium">4.2KΞ ($7.57M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Mar 11, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk4156-p-500.png 500w, images/punk4156.png 1167w" src="images/punk4156.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#4156</div>
+                        <div class="text-size-medium">4.2KΞ ($10.26M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Dec 09, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img src="images/punk2140-1.png" loading="lazy" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#5217</div>
+                        <div class="text-size-medium">2.25KΞ ($5.45M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Jul 30, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk8857-p-500.png 500w, images/punk8857.png 1167w" src="images/punk8857.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#8857</div>
+                        <div class="text-size-medium">2KΞ ($6.63M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Sep 11, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk2140-p-500.png 500w, images/punk2140.png 1167w" src="images/punk2140.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#2140</div>
+                        <div class="text-size-medium">1.6KΞ ($3.76M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Jul 30, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img src="images/punk7252.png" loading="lazy" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#7252</div>
+                        <div class="text-size-medium">1.6KΞ ($5.33M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Aug 24, 2021</p>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk6275-p-500.png 500w, images/punk6275.png 1167w" src="images/punk6275.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#2338</div>
+                        <div class="text-size-medium">1.5KΞ ($4.32M)<br></div>
+                      </div>
+                      <p class="text-color-darkgrey">Aug 06, 2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-sales_arrow left w-slider-arrow-left"><img src="images/arrow-left_black.svg" loading="lazy" alt=""></div>
+                <div class="home-sales_arrow w-slider-arrow-right"><img src="images/arrow-right_black.svg" loading="lazy" alt=""></div>
+                <div class="home-sales_slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-home-sales">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="margin-bottom margin-xxlarge">
+                <div class="home-sales_content-top">
+                  <div>
+                    <div class="margin-bottom margin-xsmall">
+                      <h2 class="text-color-black">Recent Transactions</h2>
+                    </div>
+                    <p class="text-size-medium text-color-darkgrey">Updated 25 seconds ago</p>
+                  </div>
+                  <a href="https://opensea.io/collection/cryptopunks" target="_blank" class="button-secondary invert-colors w-button">View all</a>
+                </div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="home-sales_component w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+                <div class="home-sales_mask w-slider-mask">
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk1254-p-500.png 500w, images/punk1254.png 1167w" src="images/punk1254.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#1254</div>
+                        <div class="text-size-medium">New bid of 51.20Ξ ($210,265)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk9844-p-500.png 500w, images/punk9844.png 1167w" src="images/punk9844.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#9844</div>
+                        <div class="text-size-medium">New bid of 111Ξ ($455,848)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk5071-p-500.png 500w, images/punk5071.png 1167w" src="images/punk5071.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#4156</div>
+                        <div class="text-size-medium">Offered for 63.95Ξ ($262,626)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk1281-p-500.png 500w, images/punk1281.png 1167w" src="images/punk1281.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#1281</div>
+                        <div class="text-size-medium">Offered for 63.95Ξ ($262,626)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk4841-p-500.png 500w, images/punk4841-p-800.png 800w, images/punk4841.png 1167w" src="images/punk4841.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#4841</div>
+                        <div class="text-size-medium">Bought for 53.83Ξ ($221,066)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk6904-p-500.png 500w, images/punk6904.png 1167w" src="images/punk6904.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#6904</div>
+                        <div class="text-size-medium">New bid of 52.52Ξ ($215,686)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk5254-p-500.png 500w, images/punk5254.png 1167w" src="images/punk5254.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#5254</div>
+                        <div class="text-size-medium">Bought for 52Ξ ($213,550)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home-sales_slide w-slide">
+                    <div class="home-sales_item">
+                      <div class="margin-bottom margin-small">
+                        <div class="home-sales_image-wrapper"><img sizes="(max-width: 479px) 80vw, (max-width: 767px) 69vw, (max-width: 991px) 42vw, 28vw" loading="lazy" srcset="images/punk3346-p-500.png 500w, images/punk3346.png 1167w" src="images/punk3346.png" alt="" class="home-sales_image"></div>
+                      </div>
+                      <div class="margin-bottom margin-xsmall">
+                        <div class="heading-small">#3346</div>
+                        <div class="text-size-medium">Offered for 56Ξ ($229,977)<br></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-sales_arrow left w-slider-arrow-left"><img src="images/arrow-left_black.svg" loading="lazy" alt=""></div>
+                <div class="home-sales_arrow w-slider-arrow-right"><img src="images/arrow-right_black.svg" loading="lazy" alt=""></div>
+                <div class="home-sales_slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-home-howto">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="w-layout-grid home-howto_component">
+                <div class="home-howto_content-left">
+                  <div class="margin-top margin-small">
+                    <h3>How do I get a punk?</h3>
+                  </div>
+                </div>
+                <div class="howto_content-right">
+                  <div data-w-id="32d1df33-6389-b5db-ec6e-66c1b82341d3" class="home-howto_timeline-wrapper">
+                    <div class="home-howto_progress-bar-wrapper">
+                      <div class="home-howto_progress-bar"></div>
+                    </div>
+                    <div data-w-id="32d1df33-6389-b5db-ec6e-66c1b82341d6" class="w-layout-grid home-howto_timeline-step">
+                      <div class="home-howto_timeline-left">
+                        <div class="home-howto_timeline-icon-wrapper"><img src="images/step1.svg" loading="lazy" alt="" class="icon-1x1-medium"></div>
+                      </div>
+                      <div class="home-howto_timeline-right">
+                        <div class="home-howto_text-wrapper">
+                          <div class="margin-bottom margin-small"><img src="images/metamask_1metamask.png" loading="lazy" alt="" class="icon-1x1-medium"></div>
+                          <div class="margin-bottom margin-xsmall">
+                            <h6>Download and install MetaMask</h6>
+                          </div>
+                          <p>Download and install a Chrome browser plugin called <a href="https://metamask.io/" class="text-style-link">MetaMask</a>. This will allow websites (that you authorize) access to your Ethereum account.</p>
+                          <div class="margin-top margin-small">
+                            <a href="https://metamask.io/" target="_blank" class="button-secondary button-small w-button">Download MetaMask</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="32d1df33-6389-b5db-ec6e-66c1b82341e1" class="w-layout-grid home-howto_timeline-step">
+                      <div class="home-howto_timeline-left">
+                        <div class="home-howto_timeline-icon-wrapper"><img src="images/step2.svg" loading="lazy" alt="" class="icon-1x1-medium"></div>
+                      </div>
+                      <div class="home-howto_timeline-right">
+                        <div class="home-howto_text-wrapper">
+                          <div class="margin-bottom margin-small"><img src="images/ethereum_1ethereum.png" loading="lazy" alt="" class="icon-1x1-medium"></div>
+                          <div class="margin-bottom margin-xsmall">
+                            <h6>Buy some Ethereum</h6>
+                          </div>
+                          <p>If you made a new account, buy some Ethereum. The MetaMask plugin has a button that will allow you to buy Ether from Coinbase.<br></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-w-id="32d1df33-6389-b5db-ec6e-66c1b82341ec" class="w-layout-grid home-howto_timeline-step">
+                      <div class="home-howto_timeline-left">
+                        <div class="home-howto_timeline-icon-wrapper"><img src="images/step3.svg" loading="lazy" alt="" class="icon-1x1-medium"></div>
+                      </div>
+                      <div class="home-howto_timeline-right">
+                        <div class="home-howto_text-wrapper">
+                          <div class="margin-bottom margin-xsmall">
+                            <h6>Start bidding, buying and selling</h6>
+                          </div>
+                          <p>Once you have the plugin installed, this website will recognize it and add buttons that allow you to bid on, buy and sell punks directly in the interface.<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="section-home-faq">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xhuge">
+              <div class="margin-bottom margin-xxlarge">
+                <div class="max-width-large">
+                  <div class="margin-bottom margin-small">
+                    <h2>Details and FAQ</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="home-faq_component">
+                <div class="home-faq_content">
+                  <div class="home-faq_question">
+                    <div class="text-size-large text-weight-medium">Where are the images for the punks stored?<br></div>
+                  </div>
+                  <p>When originally released, the actual images of the punks were too large to store on the blockchain, so we took a hash of the <a href="https://www.larvalabs.com/public/images/cryptopunks/punks.png"><strong>composite image</strong></a> of all the punks and <a href="https://github.com/larvalabs/cryptopunks/blob/master/contracts/CryptoPunksMarket.sol#L5"><strong>embeded it into the contract</strong></a>. You can verify that the punks being managed by the Ethereum contract are the True Official Genuine CryptoPunks™ by calculating an SHA256 hash on the cryptopunks image and comparing it to the hash stored in the contract.Since then, due to some clever compression ideas and some help from friends of the punks we have managed to put the entire image and attribute data fully on chain. You can read more about the mechanisms and details of the process in the <a href="https://www.larvalabs.com/blog/2021-8-18-18-0/on-chain-cryptopunks" class="text-style-link">announcement blog post</a>.</p>
+                </div>
+                <div class="home-faq_content">
+                  <div class="home-faq_question">
+                    <div class="text-size-large text-weight-medium">Are the punks an ERC-721 token?<br></div>
+                  </div>
+                  <p>No. The CryptoPunks pre-date the ERC-721 standard and are a custom contract, that means it doesn&#x27;t comply with any standards. They are <em>almost</em> an <a href="https://theethereum.wiki/w/index.php/ERC20_Token_Standard" class="text-style-link">ERC20 token</a>. We support the methods that provide your balance so you can watch CryptoPunks as a token in your wallet and see how many you own. None of the other methods are the same since you&#x27;re not transferring a simple balance, but need to reference which specific Punk you want to work with.<br></p>
+                </div>
+                <div class="home-faq_content">
+                  <div class="home-faq_question">
+                    <div class="text-size-large text-weight-medium">Where does the market data on this site come from?<br></div>
+                  </div>
+                  <p>The prices, bids and sales you see on this site are loaded from the Cryptopunks contract on the Ethereum blockchain. Because the Cryptopunks pre-date the ERC-721 standard (and all third party NFT marketplaces) we also needed to write a market so the punks could be transacted. We have no control over the contract governing this market, and have no access to any additional data beyond what the blockchain provides. In fact anyone else could write a web front end for it.<br></p>
+                </div>
+                <div class="home-faq_content">
+                  <div class="home-faq_question">
+                    <div class="text-size-large text-weight-medium">Do you charge any fees for transactions?<br></div>
+                  </div>
+                  <p>No. We charge no fees for Cryptopunks transacted through the built-in market beyond the ones charged by Ethereum (gas).The contract source and more technical details are available <a href="https://github.com/larvalabs/cryptopunks" class="text-style-link">on Github</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer_component">
+      <div class="page-padding">
+        <div class="container-large">
+          <div class="padding-vertical padding-xxlarge">
+            <div class="padding-bottom padding-xxlarge">
+              <div class="w-layout-grid footer_top-wrapper">
+                <a href="#" id="w-node-e1dfd3b5-39a9-e48c-dac8-9c89c9a849da-65910a96" class="footer4_logo-link w-nav-brand"><img src="images/CryptoPunks-logo.png" loading="lazy" width="134" alt=""></a>
+                <div class="w-layout-grid footer_link-list">
+                  <a href="#" class="footer_link">Buy a Punk</a>
+                  <a href="#" class="footer_link">View Full Collection</a>
+                </div>
+                <div id="w-node-e1dfd3b5-39a9-e48c-dac8-9c89c9a849e7-65910a96" class="w-layout-grid footer_socials-wrapper">
+                  <a href="#" class="footer_social-link w-inline-block">
+                    <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="CurrentColor"></path>
+                      </svg></div>
+                  </a>
+                  <a href="#" class="footer_social-link w-inline-block">
+                    <div class="social-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_16_462)">
+                          <path d="M19.2774 5.01386C17.9389 4.37206 16.5036 3.89921 15.0029 3.62839C14.9756 3.62317 14.9483 3.63623 14.9342 3.66235C14.7496 4.00545 14.5451 4.45304 14.402 4.80485C12.7879 4.55232 11.182 4.55232 9.60103 4.80485C9.45782 4.44522 9.24592 4.00545 9.0605 3.66235C9.04642 3.6371 9.01912 3.62404 8.99179 3.62839C7.49192 3.89835 6.05662 4.3712 4.71732 5.01386C4.70572 5.01908 4.69579 5.0278 4.68919 5.03911C1.96672 9.28954 1.22092 13.4355 1.58678 17.5301C1.58844 17.5501 1.5992 17.5693 1.6141 17.5814C3.41031 18.9599 5.15024 19.7968 6.85787 20.3515C6.8852 20.3602 6.91415 20.3497 6.93155 20.3262C7.33549 19.7498 7.69556 19.1419 8.00429 18.5027C8.02251 18.4653 8.00512 18.4209 7.96788 18.4061C7.39674 18.1797 6.8529 17.9036 6.32976 17.5902C6.28838 17.5649 6.28507 17.503 6.32314 17.4734C6.43323 17.3872 6.54334 17.2975 6.64846 17.207C6.66748 17.1904 6.69398 17.1869 6.71634 17.1974C10.1531 18.8371 13.8739 18.8371 17.2701 17.1974C17.2924 17.1861 17.3189 17.1896 17.3388 17.2061C17.4439 17.2967 17.554 17.3872 17.6649 17.4734C17.703 17.503 17.7005 17.5649 17.6591 17.5902C17.136 17.9097 16.5922 18.1797 16.0202 18.4052C15.983 18.42 15.9664 18.4653 15.9846 18.5027C16.3 19.141 16.66 19.7489 17.0565 20.3254C17.0731 20.3497 17.1029 20.3602 17.1302 20.3515C18.8461 19.7968 20.586 18.9599 22.3823 17.5814C22.398 17.5693 22.4079 17.551 22.4096 17.5309C22.8474 12.7972 21.6762 8.68521 19.3047 5.03998C19.2989 5.0278 19.289 5.01908 19.2774 5.01386ZM8.51752 15.0369C7.48281 15.0369 6.63024 14.0442 6.63024 12.825C6.63024 11.6059 7.46628 10.6132 8.51752 10.6132C9.57701 10.6132 10.4213 11.6146 10.4048 12.825C10.4048 14.0442 9.56873 15.0369 8.51752 15.0369ZM15.4954 15.0369C14.4607 15.0369 13.6082 14.0442 13.6082 12.825C13.6082 11.6059 14.4442 10.6132 15.4954 10.6132C16.5549 10.6132 17.3992 11.6146 17.3827 12.825C17.3827 14.0442 16.5549 15.0369 15.4954 15.0369Z" fill="CurrentColor"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_16_462">
+                            <rect width="21" height="17" fill="white" transform="translate(1.5 3.5)"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="padding-top padding-medium">
+              <div class="w-layout-grid footer_bottom-wrapper">
+                <div id="w-node-e1dfd3b5-39a9-e48c-dac8-9c89c9a849f3-65910a96" class="footer_credit-text">© 2021 CryptoPunks. All right reserved.</div>
+                <a href="#" class="footer_bottom-link">Privacy Policy</a>
+                <a href="#" class="footer_bottom-link">Terms of Service</a>
+                <a href="#" class="footer_bottom-link">Cookies Settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rl-cta_component">
+      <div class="rl-cta_text-wrapper">
+        <div>This cloneable was built in under 1.5 hours using the Relume Library</div>
+      </div>
+      <a href="http://library.relume.io" target="_blank" class="button-secondary button-small w-button">View Relume Library</a>
+    </div>
+    <div class="w-embed w-script">
+      <script>
+   CONTRACT_ADDRESS = "0x317E6CcaB64dE94e7D19d531149AD26e67f10607"
+   IS_TESTNET = true
+   MAX_PER_MINT = 20
+   STYLES = {
+     primaryColor: "#fff",
+     backgroundColor: "#101111",
+     buttonTextColor: "#101111",
+     theme: "dark",
+     corners: "rounded"
+   }
+    CONTRACT_ABI = [
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "initBaseURI",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "initNotRevealedUri",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "approved",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "Approval",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bool",
+            "name": "approved",
+            "type": "bool"
+          }
+        ],
+        "name": "ApprovalForAll",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "approve",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "flipReveal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "flipSaleActive",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenQuantity",
+            "type": "uint256"
+          }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenQuantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "_signature",
+            "type": "string"
+          }
+        ],
+        "name": "preSalemint",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "safeTransferFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_data",
+            "type": "bytes"
+          }
+        ],
+        "name": "safeTransferFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "approved",
+            "type": "bool"
+          }
+        ],
+        "name": "setApprovalForAll",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_newBaseExtension",
+            "type": "string"
+          }
+        ],
+        "name": "setBaseExtension",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_newBaseURI",
+            "type": "string"
+          }
+        ],
+        "name": "setBaseURI",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_maxBalance",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMaxBalance",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_maxMint",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMaxMint",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_mintPrice",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMintPrice",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_notRevealedURI",
+            "type": "string"
+          }
+        ],
+        "name": "setNotRevealedURI",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_signature",
+            "type": "string"
+          }
+        ],
+        "name": "setSignature",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "Transfer",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "transferFrom",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          }
+        ],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "_isSaleActive",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "_revealed",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          }
+        ],
+        "name": "balanceOf",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "baseExtension",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "getApproved",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "operator",
+            "type": "address"
+          }
+        ],
+        "name": "isApprovedForAll",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "MAX_SUPPLY",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "maxBalance",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "maxMint",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "notRevealedUri",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "ownerOf",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "price",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes4",
+            "name": "interfaceId",
+            "type": "bytes4"
+          }
+        ],
+        "name": "supportsInterface",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "symbol",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "name": "tokenByIndex",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "name": "tokenOfOwnerByIndex",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "tokenURI",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+</script>
+      <script src="https://nftcomponents.vercel.app/static/js/main.js"></script>
+      <link href="https://nftcomponents.vercel.app/static/css/main.css" rel="stylesheet">
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62de798201805b802e910a92" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
